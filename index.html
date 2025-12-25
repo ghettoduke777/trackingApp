@@ -1,0 +1,97 @@
+<!Doctype html>
+<html lang="en-US">
+  <head>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/circle.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <title>Activity Tracker</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      /* CSS for cycleTracker App */
+
+body {
+  margin: 1vh auto auto;
+  background-color: light-green;
+  text-align: center;
+}
+ul,
+fieldset,
+legend {
+  border: 1px solid;
+  background-color: #fff;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+fieldset legend {
+  flex: 1;
+  
+}
+
+ul {
+  padding: 0;
+  font-family: monospace;
+  margin: 1vh auto auto;
+}
+li,
+legend {
+  list-style-type: none;
+  padding: 0.2em 0.5em;
+  background-color: #cfc;
+}
+li:nth-of-type(even) {
+  background-color: inherit;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1>activitytracker</h1>
+    <form id="new-activity">
+      <fieldset>
+        <legend>Enter your activitystart and end date</legend>
+        <p>
+          <label for="start-date">Start date</label>
+          <input type="date" id="start-date" value="submit" required />
+        </p>
+        <p>
+          <label for="end-date">End date</label>
+          <input type="date" id="end-date" value="submit" required />
+        </p>
+      </fieldset>
+      <p>
+        <button style="margin: 0.4rem auto auto; padding: 0.3rem;" type="submit">Add Activity</button>
+      </p>
+    </form>
+    <section id="past-activities">
+      <!--<h2>Past activitiess</h2>
+      <ul>
+        <li>From 01/01/2024 to 01/06/2024</li>
+        <li>From 01/29/2024 to 02/04/2024</li>
+      </ul>
+      -->
+    </section>
+    <script src="./scripts/app.js" defer></script>
+    <!--<script src="./scripts/sw.js"></script> -->
+    <script src="./scripts/sw.js">
+      if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then(
+    (registration) => {
+      console.log("Service worker registration successful:", registration);
+    },
+    (error) => {
+      console.error(`Service worker registration failed: ${error}`);
+    },
+  );
+} else {
+  console.error("Service workers are not supported.");
+}
+    </script>
+  </body>
+</html>
