@@ -1,4 +1,4 @@
-/* CSS for cycleTracker App */
+/* CSS for Acrtivty Tracker App */
 /*
 body {
   margin: 1vh 1vw;
@@ -25,8 +25,13 @@ li:nth-of-type(even) {
 }*/
 body {
   margin: 1vh auto auto;
-  background-color: light-green;
+  background-color: #000;
   text-align: center;
+  font-family: 'Times New Romans', serif;
+  font-size: 1.7rem;
+  width: 70vw;
+  height: 70vh;
+  overflow: hidden;
 }
 ul,
 fieldset,
