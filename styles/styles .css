@@ -1,8 +1,10 @@
-/* CSS for Acrtivty Tracker App */
+/* CSS for Activty Tracker App */
 /*
 body {
   margin: 1vh 1vw;
   background-color: light-green;
+  background: #1f3b3b;
+  background: radial-gradient(circle, rgba(31, 59, 59, 1) 0%, rgba(103, 207, 198, 0.69) 100%);
 }
 ul,
 fieldset,
@@ -25,13 +27,22 @@ li:nth-of-type(even) {
 }*/
 body {
   margin: 1vh auto auto;
-  background-color: #000;
+  
+  background: radial-gradient(circle, rgba(31, 59, 59, 1) 0%, rgba(103, 207, 198, 0.69) 100%);
   text-align: center;
   font-family: 'Times New Romans', serif;
   font-size: 1.7rem;
   width: 70vw;
   height: 70vh;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  color: #0f0;
 }
 ul,
 fieldset,
@@ -46,10 +57,23 @@ fieldset {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  max-width: 65vw;
+  max-height: 70vh;
+  overflow-y: scroll;
+
 }
 fieldset legend {
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
+}
+legend {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center
 }
 
 ul {
@@ -61,10 +85,34 @@ li,
 legend {
   list-style-type: none;
   padding: 0.2em 0.5em;
-  background-color: #cfc;
+  background-color: #000;
+  color: #fff;
 }
 li:nth-of-type(even) {
   background-color: inherit;
+  color: #000;
 }
+@media (max-width: 768px) {
+  body {
+    width: 95vw;
+    font-size: 1.2rem;
+    background-color: #000;
+  }
+  h1 {
+    font-size: medium;
+    color: #000;
+  }
+  fieldset {
+    max-width: 90vw;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  legend {
+    width: 90vw;
 
+  }
+  li {
+    font-size: medium;
+  }
+}
 
