@@ -76,7 +76,7 @@ function getAllStoredActivities() {
   return activities;
 }
 */
-//Render Past Act8vities oeiginal
+//Render Past Activities original
 /*
 function renderPastActivities() {
   const pastActivityHeader = document.createElement("h2");
@@ -99,7 +99,7 @@ function renderPastActivities() {
   pastActivityContainer.appendChild(pastActivityList);
 }
 */
-//format date orig8nal
+//format date original
 /*
 function formatDate(dateString) {
   const date = new Date(dateString);
