@@ -1,2 +1,2 @@
 # Activity tracking App
-##Tracks your a calendar event from start to finish
+##Tracks your calendar event from start to finish.
