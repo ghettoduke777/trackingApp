@@ -10,7 +10,7 @@ const APP_STATIC_RESOURCES = [
   "/index.html",
   "/app.js",
   "/styles/style.css",
-  "/icons/wheel.svg",
+  "/icons/tire.svg",
 ];
 /*
   Add an install event listener that retrieves and stores the files listed in APP_STATIC_RESOURCES into the cache named CACHE_NAME.
