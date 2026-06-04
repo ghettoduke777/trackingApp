@@ -32,7 +32,7 @@ body {
   text-align: center;
   font-family: 'Times New Romans', serif;
   font-size: 1.7rem;
-  width: 70vw;
+  width: 80vw;
   height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -103,7 +103,7 @@ li:nth-of-type(even) {
     color: #000;
   }
   fieldset {
-    max-width: 90vw;
+    max-width: 92vw;
     text-align: center;
     font-size: 0.9rem;
   }
